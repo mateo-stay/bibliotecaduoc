@@ -1,5 +1,9 @@
-com/example/bibliotecaduoc/BibliotecaduocApplication.class
 com/example/bibliotecaduoc/service/LibroService.class
+com/example/bibliotecaduoc/repository/PrestamoRepository.class
+com/example/bibliotecaduoc/model/Prestamo.class
+com/example/bibliotecaduoc/controller/PrestamoController.class
+com/example/bibliotecaduoc/BibliotecaduocApplication.class
 com/example/bibliotecaduoc/controller/LibroController.class
+com/example/bibliotecaduoc/service/PrestamoService.class
 com/example/bibliotecaduoc/repository/LibroRepository.class
 com/example/bibliotecaduoc/model/Libro.class
