@@ -1,4 +1,4 @@
-package com.example.bibliotecaduoc;
+package com.example.bibliotecaduoc.service;
 
 import com.example.bibliotecaduoc.model.Libro;
 import com.example.bibliotecaduoc.repository.LibroRepository;
@@ -31,4 +31,30 @@ public class LibroService {
     public void eliminar(int id) {
         libroRepository.eliminar(id);
     }
+
+    public int totalLibrosV1(){
+        return libroRepository.obtenerLibros().size();
+    }
+
+    public int totalLibrosV2(){
+        return libroRepository.totalLibros();
+    }
+    public Libro buscarPorIsbn(String isbn) {
+        return libroRepository.buscarPorIsbn(isbn);
+    }
+    public int contarLibrosPorAno(int ano) {
+        return libroRepository.contarLibrosPorAno(ano);
+    }
+    public List<Libro> buscarPorAutor(String autor) {
+        return libroRepository.buscarPorAutor(autor);
+    }
+    public Libro buscarLibroMasAntiguo() {
+        return libroRepository.buscarLibroMasAntiguo();
+    }    
+    public Libro buscarLibroMasNuevo() {
+        return libroRepository.buscarLibroMasNuevo();
+    }    
+    public List<Libro> listarLibrosOrdenadosPorAnio() {
+        return libroRepository.listarLibrosOrdenadosPorAnio();
+    }    
 }
